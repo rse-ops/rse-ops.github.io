@@ -1,0 +1,29 @@
+title: RADIUSS
+description: Rapid Application Development via an Institutional Universal Software Stack
+# baseurl: The subpath of your site
+# > set this to "", if you renamed the repository to <user>.github.io
+baseurl: "/rse-radiuss.github.io"
+
+# LANDING PAGE
+username: RADIUSS
+typing_text: Resources and Practices for Open Source Software 
+
+# For every social button you want to display, set your username or userid
+# If you do not use one of the following websites, then leave it empty
+# > twitter_username:
+github_username: rse-radiuss
+linkedin_username: company/lawrence-livermore-national-laboratory
+twitter_username: llnl_opensource
+
+plugins:
+  - "jekyll-github-metadata"
+
+exclude:
+  [
+    "_assets",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+  ]

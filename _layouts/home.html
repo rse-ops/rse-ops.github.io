@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  {% include favicons.html %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/vendors.min.css" | prepend: site.baseurl }}">
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="{{ "/assets/js/vendors.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="load">
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+    </div>
+  </div>
+  {% include landing.html %}
+  <img src="{{ site.baseurl }}/assets/img/solid.svg">
+  {% include footer.html %}
+<script>
+// Typerwriter.js
+var app = document.getElementById('typing');
+
+var typewriter = new Typewriter(app, {
+  loop: false,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('{{site.typing_text}}')
+  .start();
+</script>
+</body>
+</html>
