@@ -1,0 +1,40 @@
+name: update-posts
+
+on:
+  schedule:
+    - cron: 0 6 * * *
+
+jobs:
+  Update:
+    name: Retrieve New Posts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Update posts
+        run: |
+          git clone https://github.com/llnl/llnl.github.io /tmp/llnl
+          cp /tmp/llnl/_posts/*.md _posts/
+
+      - name: Deploy to site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          printf "GitHub Actor: ${GITHUB_ACTOR}\n"
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git config pull.rebase false
+          git add _posts/*.md
+
+          set +e
+          git status | grep modified
+          if [ $? -eq 0 ]; then
+              set -e
+              printf "Changes\n"
+              git commit -m "Automated push to update news $(date '+%Y-%m-%d')" || exit 0
+              git push origin main
+          else
+              set -e
+              printf "No changes\n"
+          fi

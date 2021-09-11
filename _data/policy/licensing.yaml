@@ -1,0 +1,30 @@
+rules:
+  - id: mlic1
+    alt: M.lic.1
+    badge: https://img.shields.io/badge/M.lic-1-red.svg
+    description: New projects must use an <a href="https://opensource.org/licenses">OSI</a>-approved, permissive open-source license
+    details: Examples are Apache, MIT, or BSD 3-Clause. Similarly, any required dependencies must use an OSI-approved license that is considered compatible with the open-source permissive license for distribution purposes. Non-critical optional dependencies may use any OSI-approved license.
+    rationale: A permissive open-source license is friendlier to use by commercial entities. Note that strong copyleft licenses (e.g., GPL) are not considered compatible with permissive licenses. Weaker copyleft licenses (e.g., LGPL or GPL v2 with runtime exception) can be considered compatible for distribution purposes.
+    references:
+      - url: https://github.com/xsdk-project/xsdk-community-policies/blob/master/package_policies/M7.md
+        id: xSDK M7
+
+  - id: mlic2
+    alt: M.lic.2
+    badge: https://img.shields.io/badge/M.lic-2-red.svg
+    description: Provide a list of dependencies and their associated licenses in SPDX format.
+    details: The <a href="https://spdx.org/licenses/">SPDX License List</a> is a list of commonly found licenses and exceptions used in open-source software that enables easy and efficient identification of such licenses. At the minimum, this should be done for all internally bundled source code, and optionally for external dependencies as well. It should preferably be placed in the NOTICE (or LICENSE) file in the root of the repository or in the bottom of a README.md.
+    rationale: This provides important information in a concise format to users and projects who are making decisions about whether to adopt RADIUSS products without forcing them to track down this information for each dependency.
+    examples:
+      - See the Spack <a href="https://github.com/spack/spack/blob/develop/COPYRIGHT">COPYRIGHT</a> file.>
+      - See the Cardioid <a href="https://github.com/LLNL/cardioid/blob/master/README.md">README</a> file.
+    references:
+      - url: https://opensource.llnl.gov/about/licenses">this link</a>
+        id: LLNL Software Licensing Guidelines. 
+
+  - id: rlic3
+    alt: R.lic.3
+    badge: https://img.shields.io/badge/R.lic-3-yellow.svg
+    description: Existing projects should move to an <a href="https://opensource.org/licenses">OSI</a>-approved, permissive open-source license.
+    details: Unlike M.lic.1, we recognize that projects that have existed for a long time may have adopted non-permissive licenses at their outset and it may be infeasible to convert. But the long-term benefits may make this worth considering.
+    rationale: <a href="#mlic1"><em>See M.lic.1</em></a>

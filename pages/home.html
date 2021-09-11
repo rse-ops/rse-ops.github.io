@@ -1,0 +1,106 @@
+---
+title: RADIUSS
+layout: default
+permalink: /home/
+---
+
+<div class="jumbotron bg-gray-light">
+  <div class="container-lg-home px-4 pb-md-4">
+    <div class="col-sm-10 col-md-7 float-md-left mb-3 mb-md-0">
+      <h1 class="display-alpha mb-3">RADIUSS</h1>
+      <p class="heading-gamma dim mb-4">
+        We aim to provide resources and suggested practices for good open source software across national labs and open source. We invite you to browse our resources, our join our community.
+      </p>
+      <p class="mb-4 mb-md-0 f3 text-serif">
+        <a href="{{ site.baseurl }}/docs" class="btn btn-red mr-1 btn-raise-hover">Read the docs</a>
+        <a href="{{ site.baseurl }}/about" class="btn btn-raise-hover">Learn more</a>
+      </p>
+    </div>
+    <div class="col-md-4 float-md-right">
+      <div class="card card-with-stripe mt-3 box-shadow-none">
+        <h2 class="heading-gamma mb-2">You might be interested in:</h2>
+        <ol class="ol-styled ml-4">
+          <li><a href="{{ site.baseurl }}/docs/policy" class="text-underline">Policies</a> we advocate for</li>
+          <li>How does DevOps maps to HPC? We are thinking about <a href="{{ site.baseurl }}/docs" class="text-underline">RSE-ops</a></li>
+          <li>Our supported <a href="https://software.llnl.gov/radiuss/" class="text-underline">lab projects</a></li>
+          <li>Our set of container bases <a href="{{ site.baseurl }}/docker-images" target="_blank" class="text-underline">container bases</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-section py-md-0">
+  <div class="container-lg-home px-4">
+    <div class="clearfix">
+      <div class="col-md-4 float-left home-side-image-wrapper">
+        <img src="{{ site.baseurl }}/assets/img/radius-circle.png" style="margin-top:150px">
+      </div>
+      <div class="col-md-8 float-right mt-md-4 pt-6">
+        <h2 class="heading-beta">What do we care about?</h2>
+        <p class="text-intro text-sans text-normal mb-4">
+        Changing HPC architectures and increasing complexity in simulations have caused major challenges to our software approaches at the lab. As we increasingly recognize the importance of collaboration and open source software, RADIUSS (Rapid Application Development via an Institutional Universal Software Stack) aims establish resources and practices to support lower cost and higher agility of development teams. The project includes:</p>
+        <ul class="list-checklist d-flex flex-wrap flex-justify-between flex-items-stretch">
+          <li class="col-sm-5">Build automation and simplification</li>
+          <li class="col-sm-5">Computer science infrastructure</li>
+          <li class="col-sm-5">Math and physics libraries</li>
+          <li class="col-sm-5">Performance/workflow optimization</li>
+          <li class="col-sm-5">Data management and visualization</a></li>
+          <li class="col-sm-5">Coding policies</a></li>
+          <li class="col-sm-5">Standard deployment models</a></li>
+          <li class="col-sm-5">Documentation</a></li>
+        </ul>
+        <p class="border-top pt-2 mt-4"><a href="{{ site.baseurl }}/about" class="no-underline">Learn more about this project <svg class="svg-icon ml-2" width="14" height="14"><use xlink:href="{{ site.baseurl }}/assets/images/icons/open-iconic/sprite.min.svg#arrow-right"></use></svg></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-lg-home px-4">
+    <h2 class="heading-epsilon mb-3">Latest News</h2>
+    <div class="d-md-flex d-wrap gut-md">
+      {% for post in site.posts limit: 2 %}
+        <div class="col-md-6">
+          <article class="card card-with-stripe mb-4 ">
+            <h3 class="heading-gamma">
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+            <div class="text-small text-gray-light mb-3">
+              <time>{{ post.date | date: "%B %-d, %Y" }}</time> · {% include _reading_time.html %} read
+            </div>
+            <p>{{ post.excerpt | strip_html }}</p>
+            <p class="text-small">
+              <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+            </p>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+      <a style="padding-bottom:25px" href="{{ site.baseurl }}/archive/">News Archive</a>
+  </div>
+  
+<div class="page-section bg-royal-blue overflow-hidden">
+  <div class="container-lg-home px-4">
+    <div class="col-md-5 float-right pl-4">
+      <h2 class="heading-gamma mb-2 text-white dim">RADIUSS at LLNL</h2>
+      <p class="text-white mb-3">
+Within LLNL, our top priority is to ensure that the lab's software stack is dependable and adaptable. LLNL internal users may visit <a href="https://dev.llnl.gov/opensource/radiuss/" target="_blank">dev.llnl.gov/opensource/radiuss/</a> for developer resources, upcoming events, opportunities for involvement, and more. General information about all LLNL open-source software, including RADIUSS projects, is available at <a href="https://software.llnl.gov" target="_blank">software.llnl.gov</a>.
+      </p>
+    </div>
+    <div class="col-md-7 float-left d-flex flex-wrap">
+      <div class="col-md-6 px-2 pb-3">
+        <div class="card"><a href="https://computing.llnl.gov/sites/default/files/RADIUSS_Flier.pdf" target="_blank">Snapshot Flyer</a></div>
+      </div>
+      <div class="col-md-6 px-2 pb-3">
+        <div class="card"><a href="https://computing.llnl.gov/sites/default/files/RADIUSS_Slides.pdf" target="_blank">Slides</a></div>
+      </div>
+      <div class="col-md-6 px-2 pb-3">
+        <div class="card"><a href="https://www.youtube.com/watch?v=L2AIHS9V3Uk" target="_blank">Lightning Talk</a></div>
+      </div>
+      <div class="col-md-6 px-2 pb-3">
+        <div class="card"><a href="https://software.llnl.gov/radiuss/" target="_blank">Projects</a></div>
+      </div>
+    </div>
+  </div>
+</div>

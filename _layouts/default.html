@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body class="bg-darkest">
+    {% unless site.info_bar == nil or site.info_bar == false %}
+      {% include _info_bar.html %}
+    {% endunless %}
+    {% include navigation.html %}
+
+    <div class="{% if page.bg-color %}{{ page.bg-color }}{% else %}bg-white{% endif %}">{{ content }}</div>
+
+    {% include site-footer.html %}
+  </body>
+</html>
