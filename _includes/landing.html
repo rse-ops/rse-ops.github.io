@@ -3,12 +3,24 @@
   <img src="assets/img/brands.svg"/>
   <div class="landing-title">
     <h1>
-      <span class="highlight-title"><img src="{{ site.baseurl }}/assets/img/radius-text.png"/></span>
+      <span class="highlight-title"><a href="{{ site.baseurl }}/home/"><img src="{{ site.baseurl }}/assets/img/radius-text.png"/></a></span>
     </h1>
     <h1>
       <span id="typing"></span>
     </h1>
     <div class="landing-icons">
+
+        <a class="social-link" aria-label="Home" href="{{ site.baseurl }}/home/">
+          <svg viewBox="0 0 200 200" class="circle">
+            <circle cx="100" cy="100" r="80" />
+          </svg>
+          <div class="social">
+            <svg class="social-svg" viewBox="0 0 48 48">
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/solid.svg#home"| prepend: site.baseurl }}"></use>
+            </svg>
+          </div>
+          <span class="label">Home</span>
+        </a>
 
         <a class="social-link" aria-label="Builds" href="https://github.com/rse-radiuss/docker-images">
           <svg viewBox="0 0 200 200" class="circle">
@@ -21,7 +33,6 @@
           </div>
           <span class="label">Containers</span>
         </a>
-
 
       {% if site.email != null %}
         <a class="social-link email" aria-label="My E-Mail" href="mailto:{{site.email}}">

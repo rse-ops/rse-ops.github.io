@@ -1,0 +1,13 @@
+    <section class="accordion__item">
+      <h4 class="accordion__heading"><button class="accordion__trigger">
+      <p> <a name="{{ rule.id }}"></a><a href="#{{ rule.id }}"><img style="float:left" src="{{ rule.badge }}" alt="{% if rule.alt %}{{ rule.alt }}{% else %}Generic badge{% endif %}"/></a>&nbsp;&nbsp; {{ rule.description }}</p>
+      </button></h4>
+      <div class="accordion__copy">
+    <ul style="padding-bottom:20px">
+    {% if rule.details %}<li><strong>Details</strong>: {{ rule.details }}</li>{% endif %}
+    {% if rule.rationale %}<li><strong>Rationale</strong>: {{ rule.rationale }}</li>{% endif %}
+    {% if rule.references %}<li><strong>Reference</strong>: {% for reference in rule.references %}<a href="{{ reference.url }}" target="_blank"><em>{{ reference.id }}</em></a>{% endfor %}</li>{% endif %}
+    {% if rule.examples %}<li><strong>Examples</strong>:<ul>{% for example in rule.examples %}<li>{{ example }}</li>{% endfor %}</ul></li>{% endif %}
+    </ul>
+   </div>
+</section>

@@ -1,0 +1,27 @@
+rules:
+  - id: mbld1
+    badge: https://img.shields.io/badge/M.bld-1-red.svg
+    description: Package your installation and provide automated builds of dependencies using <a href="https://spack.io/">Spack</a>
+    details:     
+    rationale: Automating the build process prevents duplication of effort and allows others to build a copy of the code and to incorporate needed fixes in dependency tools and libraries. Spack is a package management tool that allows easy configuration with multiple dependency versions, configurations, platforms, and compilers. 
+    references:
+      - url: "#"  
+        id: <em>Enforce WSC 1.1 and WSC 1.2</em>
+
+  - id: mbld2
+    badge: https://img.shields.io/badge/M.bld-2-red.svg
+    description: Compilable projects (e.g. written in C++ and/or Fortran) must be buildable with <a href="https://cmake.org">CMake</a>
+    details: We suggest considering <a href="https://github.com/llnl/blt">BLT</a> (Build, Link and Test) which handles known CMake limitations and provides a set of templates to easily stand up a robust CMake-based build system.
+    rationale: Consistent use of CMake and BLT will enable individual users, computing centers, and package managers (such as Spack) to install the package in a way that is compatible with other RADIUSS products on the same system.
+    references:
+      - url: "#" 
+        id: <em>WSC 3.1</em>
+
+  - id: rbld3
+    badge: https://img.shields.io/badge/R.bld-3-yellow.svg
+    description: Provide build options for production (optimized) and debug deployments.
+    details: Development and production environments are different, and it makes sense to provide build options for both.
+    rationale: Production versions should not be compiled with debug symbols and should include platform-specific optimizations so long as they pass all tests. Debug versions should be available for users who can self-assess bugs and thus provide more specific bug reports or fixes. 
+    references:
+      - url: "#"
+        id: <em>Smart Libraries practice 19</em>
