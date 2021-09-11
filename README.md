@@ -3,6 +3,7 @@
 ![assets/img/radius-text.png](assets/img/radius-text.png)
 
 [![License](https://img.shields.io/badge/License-MIT%203--Clause-blue.svg)](https://github.com/rse-radiuss/rse-radiuss.github.io/blob/main/LICENSE)
+[![CircleCI](https://circleci.com/gh/rse-radiuss/rse-radiuss.github.io/tree/main.svg?style=svg)](https://circleci.com/gh/rse-radiuss/rse-radiuss.github.io/tree/main)
 
 This project is part of [RADIUSS](https://computing.llnl.gov/projects/radiuss), which
 has a focus on helping open source scientific projects use best practices for
