@@ -68,6 +68,7 @@ We will soon be adding or working on:
 
  - A linked page of the automated container builds
  - A RESTful API to retrieve policy rules
+ - A single page print view of all policies
  - More that @vsoch hasn't properly formulated yet :)
 
 ## Thanks
