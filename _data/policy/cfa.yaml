@@ -27,8 +27,6 @@ CFA-version-control:
 CFA-popularity:
   description: How popular is the project?
   rationale: A new user or contributor will always glance at stars and forks to assess popularity.
-  radiuss:
-    -
   criteria:
     - name: Number of stars at least 50
       method: count_stars
