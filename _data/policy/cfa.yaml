@@ -11,8 +11,6 @@ NOT-MAPPED:
 CFA-branding:
   description: Does the project have branding?
   rationale: Good branding can subconsciously influence how a contributor views a project (e.g., professional, fun, etc.). 
-  radiuss:    
-    -
   criteria:
     - name: GitHub repository has logo, graphics, or other decoration
     - name: Documentation has logo, graphics, or other decoration.
