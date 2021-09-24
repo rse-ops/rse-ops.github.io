@@ -22,6 +22,13 @@ bg-color: bg-gray-light
           <p class="text-gray-light text-small">Use our library of Docker <a href="{{ site.baseurl }}/docs/container-bases/">container bases</a> for your software builds hosted on <a href="https://github.com/orgs/rse-radiuss/packages" target="_blank">GitHub packages</a>.</p>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="{{ site.baseurl }}/ci/">Continuous Integration (CI)</a></h3>
+          <p class="text-gray-light text-small">Get started with setting up CI for your project with our repository of examples, organized by build type.</p>
+        </div>
+      </div>
+      </div>
      <!--
       <div class="col-md-4">
         <div class="card mb-4">
