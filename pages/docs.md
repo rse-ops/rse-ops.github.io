@@ -58,4 +58,4 @@ bg-color: bg-gray-light
   </div>
 
 <br>
-<p class="alert alert-info"> These pages are in the process of being created, come back soon!</p>
+<p class="alert alert-info">If you'd like to help brainstorm or contribute ideas or feedback, join the conversation at the <a href="https://github.com/rse-radiuss/roadmap" target="_blank">roadmap</a> repository and discussion area.</p>
