@@ -48,6 +48,12 @@ github_username: rse-radiuss
 linkedin_username: company/lawrence-livermore-national-laboratory
 twitter_username: llnl_opensource
 
+# Theme for docs
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: rse-radiuss/radiuss-docs-jekyll
+
 exclude:
  - _assets
  - Gemfile
