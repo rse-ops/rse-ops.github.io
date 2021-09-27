@@ -1,0 +1,22 @@
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <!-- TODO we need search here -->
+  <!--<form class="td-sidebar__search d-flex align-items-center">
+    <input type="search" class="form-control td-search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off">
+      <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+      </button>
+  </form>-->
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    <ul class="list-style-none">
+    {% for section in site.data.menus.[page.sidebar] %}
+        {% capture sectionUrl %} 
+          {{ section.url | replace: "/", "" }} 
+        {% endcapture %}
+        {% capture pageUrl %} 
+          {{ page.url | replace: "/", "" }} 
+        {% endcapture %}
+            <li class="side-nav-item border-bottom m-0{% if pageUrl == sectionUrl %} active{% endif %} js-side-nav-item"><a href="{{ site.baseurl }}/{{ section.url }}" class="side-nav-link py-2 d-block{% if pageUrl == sectionUrl %} active js-side-nav-link-active{% endif %}">{{ section.title }}</a></li>
+        {% endfor %}
+    </ul>
+  </nav>
+</div>
