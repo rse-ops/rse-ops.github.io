@@ -4854,13 +4854,13 @@ blockquote,
   color: #fff;
   background-image: linear-gradient(#741755, #741755); }
   .btn-red:hover, .btn-blue.zeroclipboard-is-hover {
-    background-image: linear-gradient(#712109, #712109); }
+    background-image: linear-gradient(#005dab, #005dab); }
   .btn-red:active, .btn-blue.selected, .btn-blue.zeroclipboard-is-active {
     background-color: #38396b;
     background-image: none;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15); }
   .btn-red.selected:hover {
-    background-color: #712109; }
+    background-color: #005dab; }
 
 
 .link-download {
