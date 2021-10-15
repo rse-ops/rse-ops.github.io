@@ -21,7 +21,7 @@ bg-color: bg-gray-light
       <div class="col-md-4">
         <div class="card mb-4">
           <h3 class="heading-delta"><a href="{{ site.baseurl }}/docs/container-bases/">Container Bases</a></h3>
-          <p class="text-gray-light text-small">Use our library of Docker <a href="{{ site.baseurl }}/docs/container-bases/">container bases</a> for your software builds hosted on <a href="https://github.com/orgs/rse-radiuss/packages" target="_blank">GitHub packages</a>.</p>
+          <p class="text-gray-light text-small">Use our library of Docker <a href="{{ site.baseurl }}/docs/container-bases/">container bases</a> for your software builds hosted on <a href="https://github.com/orgs/rse-ops/packages" target="_blank">GitHub packages</a>.</p>
         </div>
       </div>
       <div class="col-md-4">
@@ -32,7 +32,7 @@ bg-color: bg-gray-light
       </div>
       <div class="col-md-4">
         <div class="card mb-4">
-          <h3 class="heading-delta"><a href="https://rse-radiuss.github.io/radiuss-docs-jekyll-example/">RADIUSS Docs Jekyll</a></h3>
+          <h3 class="heading-delta"><a href="https://rse-ops.github.io/rseops-docs-jekyll-example/">RSE-ops Docs Jekyll</a></h3>
           <p class="text-gray-light text-small">Want to create a few pages of documentation to match the site here? This template can help.</p>
         </div>
       </div>
@@ -65,4 +65,4 @@ bg-color: bg-gray-light
     </div>
   </div>
 <br>
-<p class="alert alert-info">If you'd like to help brainstorm or contribute ideas or feedback, join the conversation at the <a href="https://github.com/rse-radiuss/roadmap" target="_blank">roadmap</a> repository and discussion area.</p>
+<p class="alert alert-info">If you'd like to help brainstorm or contribute ideas or feedback, join the conversation at the <a href="https://github.com/rse-ops/roadmap" target="_blank">roadmap</a> repository and discussion area.</p>

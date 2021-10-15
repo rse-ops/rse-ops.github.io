@@ -23,7 +23,7 @@ layout: null
         "nb_sides": 4
       },
       "image": {
-        "src": "{{ site.baseurl }}/assets/img/radiuss-circle-transparent.png",
+        "src": "{{ site.baseurl }}/assets/img/rse-ops-circle-transparent.png",
         "opacity": 0.1,
         "width": 500,
         "height": 500

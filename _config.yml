@@ -1,20 +1,20 @@
-title: RADIUSS
-description: Rapid Application Development via an Institutional Universal Software Stack
+title: RSE-ops
+description: Research Software Engineering Ops
 # baseurl: The subpath of your site
 # DO NOT EDIT this line number unless you change .circleci/circle_urls.sh
 baseurl: ""
 
 # LANDING PAGE
-username: RADIUSS
-typing_text: Resources and Practices for Open Source Software 
-nav_logo_file: assets/img/radius-text.png
-footer_logo_file: assets/img/radius-circle.png
+username: rse-ops
+typing_text: Research Software Engineering Ops
+nav_logo_file: assets/img/rse-ops-text.png
+footer_logo_file: assets/img/rse-ops-circle.png
 
 # Info /message at the top
 info_bar: true # Bar at the top of all pages. Delete this line or set to false for no info bar display.
-info_bar_text: This site is currently under development for <a href="https://radiuss.llnl.gov" target="_blank" class="text-white text-underline">RADIUSS</a>
+info_bar_text: This site is currently under development for the <a href="https://github.com/rse-ops" target="_blank" class="text-white text-underline">RSE-ops</a> community.
 
-footer_text: RADIUSS is an initiative started at <a href="https://radiuss.llnl.gov" class="text-white text-underline">Lawrence Livermore National Laboratory</a> in Livermore,  CA USA.<br>&copy; Copyright 2021, under the terms of the <a href="https://github.com/rse-radiuss/rse-radiuss.github.io/blob/main/LICENSE" class="text-white text-underline">MIT License</a>.
+footer_text: RSE-ops is a community that was founded by RADIUSS at <a href="https://radiuss.llnl.gov" class="text-white text-underline">Lawrence Livermore National Laboratory</a> in Livermore,  CA USA.<br>&copy; Copyright 2021, under the terms of the <a href="https://github.com/rse-ops/rse-ops.github.io/blob/main/LICENSE" class="text-white text-underline">MIT License</a>.
 
 permalink: pretty
 
@@ -44,15 +44,15 @@ github_link: true
 github_pages_branch: main
 
 # Social
-github_username: rse-radiuss
+github_username: rse-ops
 linkedin_username: company/lawrence-livermore-national-laboratory
-twitter_username: llnl_opensource
+twitter_username: rseops
 
 # Theme for docs
 plugins:
   - jekyll-remote-theme
 
-remote_theme: rse-radiuss/radiuss-docs-jekyll
+remote_theme: rse-ops/rseops-docs-jekyll
 
 exclude:
  - _assets
