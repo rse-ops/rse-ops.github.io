@@ -43,7 +43,7 @@ rules:
     badge: https://img.shields.io/badge/R.doc-5-yellow.svg
     description: Provide and maintain example source code along with documentation.
     details: Examples should be compiled and tested as part of a release to make sure they are kept up to date with API changes. New examples should be added when major new features are released, or existing examples should be extended to include those new features. Existing <a href="https://software.llnl.gov/category/#/PROXYAPPLICATIONS">proxy apps</a> are a potential good starting place.
-    rationale: This recommendation serves two purposes. The first is for documentation of the concrete usage of the product, training, or new feature demonstration. The second is for maintenance purpose as these examples provides a primary set of tests for non-regression or installation verification (see <a href="/radiuss/policies/tests-ci">Testing and Continuous Integration</a>)
+    rationale: This recommendation serves two purposes. The first is for documentation of the concrete usage of the product, training, or new feature demonstration. The second is for maintenance purpose as these examples provides a primary set of tests for non-regression or installation verification.
 
   - id: rdoc6
     badge: https://img.shields.io/badge/R.doc-6-yellow.svg

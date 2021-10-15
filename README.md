@@ -1,23 +1,19 @@
-# Radiuss Home
+# RSE-ops Home
 
-![assets/img/radius-text.png](assets/img/radius-text.png)
+![assets/img/rse-ops-text.png](assets/img/rse-ops-text.png)
 
-[![License](https://img.shields.io/badge/License-MIT%203--Clause-blue.svg)](https://github.com/rse-radiuss/rse-radiuss.github.io/blob/main/LICENSE)
-[![CircleCI](https://circleci.com/gh/rse-radiuss/rse-radiuss.github.io/tree/main.svg?style=svg)](https://circleci.com/gh/rse-radiuss/rse-radiuss.github.io/tree/main)
-
-This project is part of [RADIUSS](https://computing.llnl.gov/projects/radiuss), which
-has a focus on helping open source scientific projects use best practices for
-automation and development.
+[![License](https://img.shields.io/badge/License-MIT%203--Clause-blue.svg)](https://github.com/rse-ops/rse-ops.github.io/blob/main/LICENSE)
+[![CircleCI](https://circleci.com/gh/rse-ops/rse-ops.github.io/tree/main.svg?style=svg)](https://circleci.com/gh/rse-ops/rse-ops.github.io/tree/main)
 
 ## How does it work?
 
 ### Policy
 
-Each policy point defined at [the policy home](https://rse-radiuss.github.io/policy) is rendered from data files in [_data/policy](_data/policy). Thus, if you want to tweak the policy points, you should edit the data file. If you want to add a new category under policy, you can add a page under [docs/policy](docs/policy).
+Each policy point defined at [the policy home](https://rse-ops.github.io/policy) is rendered from data files in [_data/policy](_data/policy). Thus, if you want to tweak the policy points, you should edit the data file. If you want to add a new category under policy, you can add a page under [docs/policy](docs/policy).
 
 ### Posts
 
-The posts are automatically updated on a nightly bases, retrieved from [llnl.github.io](https://github.com/LLNL/llnl.github.io). Since these posts are for LLNL open source software, they are of course relevant for RADIUSS.
+The posts are automatically updated on a nightly bases, retrieved from [llnl.github.io](https://github.com/LLNL/llnl.github.io). If you would like to add another source of news for your research software engineering community or software group, please [open an issue](https://github.com/rse-ops/rse-ops.github.io/issues).
 
 ### Organization
 
