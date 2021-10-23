@@ -14,8 +14,8 @@ bg-color: bg-gray-light
     <div class="d-md-flex flex-wrap gut-md mb-6 mb-md-4">
       <div class="col-md-4">
         <div class="card mb-4">
-          <h3 class="heading-delta"><a href="{{ site.baseurl }}/policy/">Policy</a></h3>
-          <p class="text-gray-light text-small">Read about the policies and good practices we advocate for our open source projects.</p>
+          <h3 class="heading-delta"><a target="_blank" href="https://rse-ops.github.io/knowledge/">Knowledge</a></h3>
+          <p class="text-gray-light text-small">Browse our community knowledge base, and contribute directly or <a target="_blank" href="https://github.com/rse-ops/knowledge">request an addition!</a></p>
         </div>
       </div>
       <div class="col-md-4">
