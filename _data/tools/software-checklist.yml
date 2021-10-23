@@ -1,0 +1,200 @@
+criteria:
+
+  - title: Repository
+    items:
+      - title: Repository
+        id: r1-repository
+        description: The source code is available at a public url.
+      - title: Versioning
+        id: r2-versioning
+        description: The software has a method to support versioning.
+      - title: Contributing
+        id: r3-contributing
+        description: The repository has a CONTRIBUTING.md or contributor guide.
+      - title: Issues
+        id: r4-issues
+        description: An issues board is available for a user to ask a question, or request support.
+      - title: Statement of Need
+        id: r5-statement-of-need
+        description: A clear purpose or statement of need is defined. A reader knows what the software does.
+      - title: Branding
+        id: r6-branding
+        description: The GitHub repository and/or documentation has logo, graphics, or other decoration
+
+  ## CFA-coverage
+  # I am leaving these out - I'm not convinced they are important
+  # - title: Coverage
+  #  items:
+  #    - title: Coverage
+  #      id: c1-coverage
+  #      description: The repository reports code coverage
+  #    - title: Coverage
+  #      id: c2-high-coverage
+  #      description: The coverage is >= 90 %
+
+  ## CFA-format
+  #- title: Formatting
+  #  items:
+  #    - title: Linting
+  #     id: f1-linting
+  #      description: The documentation states how to lint and check formatting, or the language formats by default.
+  #    - title: Tests
+  #      id: f1-format-tests
+  #      description: Tests checks for formatting.
+
+  - title: Quality
+    items:
+      - title: Naming
+        id: q1-name
+        description: Naming of variables, classes, and functions is easy to understand.
+      - title: Commenting
+        id: q2-commenting
+        description: The code is robustly commented.
+      - title: Organization
+        id: q3-organization
+        description: Files and directories are organized meaningfully.
+
+  ## CFA-popularity
+  # - title: Popularity
+  #  items:
+  #    - title: Stars
+  #      id: p1-stars
+  #      description: Number of stars at least 50
+  #    - title: Forks
+  #      id: p2-forks
+  #      description: Number of forks at least 50
+
+  ## CFA-license
+  - title: License
+    items:
+      - title: License
+        id: l1-license
+        description: The GitHub repository has a clear license
+      - title: OSI Approved
+        id: l1-osi-approved
+        description: The license is an OSI-approved license
+        url: https://opensource.org/licenses/alphabetical
+
+  ## CFA-branding
+  # - title: Branding
+  #  items:
+  #    - title: Repository Branding
+  #      id: b1-branding-repo
+  #      description: GitHub repository has logo, graphics, or other decoration
+  #    - title: Documentation Branding
+  #      id: b1-branding-docs
+  #      description: Documentation has logo, graphics, or other decoration.
+
+  ## CFA-examples
+  - title: Examples
+    items:
+      - title: Readme Examples
+        id: e1-readme-examples
+        description: The README.md has one or more examples of usage.
+      - title: Documentation Examples
+        id: e1-docs-examples
+        description:  The documentation has an expanded set of examples (e.g., tutorials)
+      - title: Code Examples
+        id: e1-code-examples
+        description: Examples are included via scripts or documentation
+
+  ## CFA-outreach
+  - title: Outreach
+    items:
+      - title: Conference Presentations
+        id: o1-presentations
+        description: The project has been presented at one or more conferences.
+      - title: Publication
+        id: o2-publication
+        description: The project has been published in a journal.
+      - title: Social Media
+        id: o3-social-media
+        description: The project has a social media handle or account.
+
+    ## CFA-documentation
+  - title: Documentation
+    items:
+      - title: Availability
+        id: d1-availability
+        description: The project has a visible link to documentation
+      - title: Getting Started
+        id: d2-getting-started
+        description: There is a clear "Getting Started" guide with installation and simple usage.
+      - title: Interface
+        id: d3-interface
+        description: The documentation renders in a web interface for a more user-friendly exploration.
+      - title: Programmatic
+        id: d4-text-format
+        description: Documentation renders from a readable, plain-text format
+      - title: Version Controlled
+        id: d5-version-controlled
+        description: Different versions of documentation for various releases are available.
+      - title: Docstrings
+        id: d6-docstrings
+        description: If appropriate for the language, docstrings are rendered into code documents.
+      - title: Functionality
+        id: d7-functionality
+        description: All functions, client interactions, and if appropriate, API endpoints, are documented.
+      - title: Living Documentation
+        id: d8-living-documentation
+        description: A user can easily jump from any documentation page to ask for help, or contribute changes
+        url: https://vsoch.github.io/2018/interactive-posts/
+
+   ## CFA-developer
+  - title: Artifacts
+    items:
+      - title: Containers
+        id: a1-containers
+        description: The repository provides one or more container recipes (Dockerfile, Singularity) or a pre-built container.
+      - title: Changelog
+        id: a2-changelog
+        description: The project has a CHANGELOG and/or provides changes in release notes.
+      - title: Digital Object Identifier
+        id: a2-doi
+        description: The repository has an associated DOI for citation, or a CITATION.cff
+
+   ## CFA-developer
+  - title: Development
+    items:
+      - title: Developer Guide
+        id: d1-guide
+        description: The documentation provides a developer guide for building and installing        
+      - title: Established Framework
+        id: d2-framework
+        description: The project uses an established build framework or strategy
+      - title: Requirements
+        id: d3-requirements
+        description: Requirements or dependencies are clearly stated. 
+
+    ## CFA-tests
+  - title: Continuous Integration
+    items:
+      - title: Automated Testing
+        id: c1-automated-testing
+        description: Testing is done with any request for change to the main (typically main) branch.
+      - title: Testing Instructions
+        id: c2-testing-instructions
+        description: The documentation states how to run the tests.
+      - title: Continuous Integration
+        id: c3-continuous-integration
+        description: The tests are run with continuous integration.
+
+colors:
+ - "#B43C3C"
+ - "#BB473E"
+ - "#BF5340"
+ - "#BF6240"
+ - "#BF6F40"
+ - "#BF7540"
+ - "#BF7D40"
+ - "#BF8440"
+ - "#BF8E40"
+ - "#BF9740"
+ - "#BF9F40"
+ - "#BFAA40"
+ - "#BFB540"
+ - "#BFBB40"
+ - "#AEBF40"
+ - "#9FBF40"
+ - "#80BF40"
+ - "#59BF40"

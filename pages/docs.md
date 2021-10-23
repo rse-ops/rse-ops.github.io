@@ -42,7 +42,15 @@ bg-color: bg-gray-light
           <p class="text-gray-light text-small">Easily deploy sphinx documentation, either on readthedocs, or GitHub pages with preview on CircleCI.</p>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="{{ site.baseurl }}/docs/tools/software-checklist/">Software Checklist</a></h3>
+          <p class="text-gray-light text-small">Want to see how you are doing for good development practices? Take our quick assessment.</p>
+        </div>
       </div>
+
+      </div>
+
      <!--
       <div class="col-md-4">
         <div class="card mb-4">
