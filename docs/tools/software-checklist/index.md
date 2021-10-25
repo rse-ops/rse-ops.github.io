@@ -41,9 +41,6 @@ button {
 
 # Software Checklist
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
 <div id="app">
 
 The following checklist is to help to support collaborative development and reproducible software, and the points come by way of the <a href="https://github.com/vsoch/contributor-ci" target="_blank">Contributor Friendliness Assessment</a> of the Contributor CI package. Check the points that apply, enter the name of your repository, and then <span style="color:darkred">click the generate button</span>.
@@ -78,7 +75,10 @@ The following checklist is to help to support collaborative development and repr
 
 <blockquote class="markdown" style="display:none; overflow:hidden">
 </blockquote>
+</div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
 new Vue({
   el: '#app',
@@ -96,6 +96,7 @@ new Vue({
   methods: {
 
     getCode: function() {
+
       // Get all of the unique ids
       var checked = document.querySelectorAll('input.task-list-item-checkbox[type="checkbox"]:checked')
 
@@ -115,6 +116,7 @@ new Vue({
        return
       }
 
+      this.countPoints()
       var ids = ""
       $.each(checked, function(i, e){
        ids = ids + $(e).attr('id') + ",";
@@ -122,6 +124,8 @@ new Vue({
       ids = ids.replace(/(^,)|(,$)/g, "")
 
       // Prepare badge images
+      console.log(this.colors.length)
+      console.log(ids)
       var badgeColor = this.colors[this.points - 1]
       var badgeScore = Math.round(this.score) + "%25"
       var badgeUrl = "https://img.shields.io/badge/software%20checklist-" + badgeScore + "-" + badgeColor.replace("#", "");
